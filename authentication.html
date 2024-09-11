@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Authentication</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.5.0/css/bootstrap.min.css">
+</head>
+<body>
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid bg-dark">
+         <a class="navbar-brand link-light">Login</a>
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link link-light"  href="index.html" target="_blank">Home</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link link-light" href="dashboard.html" target="_blank">Dashboard</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link link-light" href="task_creation.html" target="_blank">Task Creation</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link link-light" href="edit_tasking.html" target="_blank">Edit Tasking</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link link-light" href="register_page.html" target="_blank">Register Page</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link link-light" href="task_details.html" target="_blank">Task Details</a>
+               </li>           
+            </ul>
+               <a class="nav-item me-2 mb-2 text-decoration-none active link-success disabled" aria-current="Login">Login</a>
+         </div>
+      </div>
+   </nav>
+   <div class="container">
+      <h1 class="my-4">Authentication</h1>
+      <form id="authenticationForm" novalidate>
+         <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" class="form-control" id="username" name="username" required>
+            <div class="invalid-feedback">Username is required.</div>
+         </div>
+         <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+            <div class="invalid-feedback">Password is required.</div>
+         </div>
+            <button type="submit" class="btn btn-primary btn-block">Log In</button>
+      </form>
+   </div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.5.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
